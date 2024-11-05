@@ -1,0 +1,11 @@
+<div *ngFor="let i of lista" id="contenedor">
+    <div *ngIf="i.nombre==nombre" id="contDos">
+        <div id="uno">
+            <u><h1>{{i.nombre}}</h1></u>
+            <img src="{{i.com}}" id="foto">
+        </div>
+        <div id="dos">
+            {{i.historia}}
+        </div>
+    </div>
+</div>

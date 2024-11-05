@@ -1,0 +1,25 @@
+*{
+    display: inline;
+}
+#contenedor{
+    text-align: center;
+    width: 25%;
+    position:relative;
+    display: inline-block;
+    margin-top:2%;
+}
+#contenedor > h2{
+    align-items: center;
+    display:flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+#foto{
+    height: 30%;
+    width: 60%;
+    position: relative;
+}
+#foto:hover{
+    transform: scale(1.2);
+}
+

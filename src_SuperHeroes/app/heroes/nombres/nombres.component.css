@@ -1,0 +1,26 @@
+.table{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    max-height: 20vh;
+    height: 100px;
+}
+#nombre{
+    width: 500px;
+    text-align: center;
+    padding-top: 2px;
+}
+.table > a{
+    text-decoration: none;
+    color:black;
+}
+#numero{
+    background-color: cadetblue;
+    text-align: center;
+    border-radius: 20px 0px 0px 20px;
+    width: 50px;
+    padding-top: 2px;
+}
+#nombre:hover{
+    transform: scale(1.2);
+}

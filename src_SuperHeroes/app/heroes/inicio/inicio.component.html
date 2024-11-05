@@ -1,0 +1,5 @@
+<div *ngFor="let i of heroes" id="contenedor"> 
+   <h2>{{i.nombre}}</h2>
+   <a routerLink="/detalles/{{i.nombre}}"><img src="{{i.image}}" id="foto"></a>
+   
+</div>

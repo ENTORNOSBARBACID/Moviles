@@ -1,0 +1,27 @@
+
+#contDos{
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content:space-between;
+}
+#uno{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+#foto{
+    width: 500px;
+    height: 700px;
+}
+#dos{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: 1.2em;
+    padding-right: 10%;
+    justify-content: center;
+    text-align: justify;
+    min-height: 20vh;
+}

@@ -1,0 +1,8 @@
+<table class="table">
+    <tbody>
+    <tr *ngFor="let item of lista" class="tabla">
+        <td id="numero">{{item.id}}</td>
+        <a routerLink="/detalles/{{item.nombre}}"><td id="nombre">{{item.nombre}}</td></a>
+    </tr>
+    </tbody>
+</table>
