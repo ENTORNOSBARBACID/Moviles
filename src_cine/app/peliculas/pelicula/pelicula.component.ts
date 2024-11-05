@@ -1,0 +1,92 @@
+import { Component, OnInit } from '@angular/core';
+import { Icine } from '../Icine'
+
+@Component({
+  selector: 'app-pelicula',
+  standalone: false,
+  templateUrl: './pelicula.component.html',
+  styleUrl: './pelicula.component.css'
+})
+export class PeliculaComponent{
+
+lista:Icine[]=[];
+
+
+
+constructor(){
+this.lista=[
+{
+  titulo:"Juegos Troneros",
+  director:"Alberto Barbacell",
+  ano:2005,
+  image:"https://pics.filmaffinity.com/game_of_thrones-293142110-mmed.jpg",
+  sinopsis:"Guerra entre familias, engaños, muerte.",
+  puntuacion:9.9,
+  id:"9"
+},
+{
+  titulo:"Lluvia albondiguera",
+  director:"Sergio Luis Me La Come",
+  ano:2001,
+  image:"https://m.media-amazon.com/images/I/712KhZLeslL._AC_UF894,1000_QL80_.jpg",
+  sinopsis:"Un cientifico loco diseña una maquila que hace llover comida, y les da vida",
+  puntuacion:6.7,
+  id:"10"
+},
+{
+  titulo:"El ser mas bobolotron",
+  director:"Eduardo Pinilla",
+  ano:2005,
+  image:"https://musicart.xboxlive.com/7/be545100-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080",
+  sinopsis:"Eduardo Antonio Pinilla es una persona muy especial, a su modo",
+  puntuacion:8.5,
+  id:"11"
+},
+{
+  titulo:"Superespeciales",
+  director:"Enzo Ruiz",
+  ano:2005,
+  image:"https://es.web.img2.acsta.net/pictures/19/03/26/17/22/0896830.jpg",
+  sinopsis:"Eduardo Antonio Pinilla es una persona muy especial, a su modo",
+  puntuacion:8.5,
+  id:"12"
+},
+{
+  titulo:"Emo girl en busca de aventuras",
+  director:"Samuel Linux",
+  ano:2005,
+  image:"https://es.web.img2.acsta.net/pictures/19/04/17/09/37/4990262.jpg",
+  sinopsis:"Eduardo Antonio Pinilla es una persona muy especial, a su modo",
+  puntuacion:8.5,
+  id:"13"
+},
+{
+  titulo:"Fumo desde pequeño",
+  director:"Alex Brawl",
+  ano:2005,
+  image:"https://es.web.img3.acsta.net/pictures/18/12/10/17/35/1733722.jpg",
+  sinopsis:"Eduardo Antonio Pinilla es una persona muy especial, a su modo",
+  puntuacion:8.5,
+  id:"14"
+},
+{
+  titulo:"El descendiente de einstein",
+  director:"Jared Filipinos",
+  ano:2005,
+  image:"https://pics.filmaffinity.com/El_editor_de_libros-246950844-large.jpg",
+  sinopsis:"Eduardo Antonio Pinilla es una persona muy especial, a su modo",
+  puntuacion:8.5,
+  id:"15"
+},
+{
+  titulo:"A dos metros del cielo",
+  director:"Pedriscoleras",
+  ano:2005,
+  image:"https://www.lavanguardia.com/peliculas-series/images/movie/poster/1996/5/w1280/uWRPzmCMalOW8DuYsysn0c486jz.jpg",
+  sinopsis:"Eduardo Antonio Pinilla es una persona muy especial, a su modo",
+  puntuacion:8.5,
+  id:"16"
+}
+]
+}
+}

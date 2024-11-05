@@ -1,0 +1,6 @@
+<div *ngFor="let s of lista" class="cine">
+{{s.titulo}}<br>
+{{s.director}}<br>
+{{s.ano}}<br>
+<a routerLink="/informacion/{{s.id}}"><img src="{{s.image}}" class="imagenes"></a>
+</div>

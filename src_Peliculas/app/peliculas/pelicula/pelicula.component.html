@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Titulo</th>
+        <th scope="col">Director</th>
+        <th scope="col">Año</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let s of lista">
+        <td>{{s.titulo}}</td>
+        <td>{{s.director}}</td>
+        <td>{{s.ano}}</td>
+      </tr>
+    </tbody>
+  </table>

@@ -1,0 +1,6 @@
+<div *ngFor="let s of cartel" class="serie">
+    {{s.titulo}}<br>
+    {{s.temporadas}}<br>
+    {{s.plataforma}}<br>
+    <img src="{{s.image}}" class="imagenes" routerLink="/informacion/{{s.id}}">
+    </div>

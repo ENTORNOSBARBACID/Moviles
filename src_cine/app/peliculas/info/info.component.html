@@ -1,0 +1,17 @@
+  <div *ngFor="let s of serie" class="info">
+    <div *ngIf="s.id==id">
+        <img src="{{s.image}}" class="imagenes">
+       <p>{{s.titulo}}</p>
+       <p>{{s.temporadas}}</p>
+        <p>{{s.plataforma}}</p>
+    </div>
+  </div>
+
+  <div *ngFor="let s of cine" class="info">
+    <div *ngIf="s.id==id">
+      <img src="{{s.image}}" class="imagenes">
+      <p> {{s.titulo}}</p>
+      <p> {{s.director}}</p>
+      <p> {{s.ano}}</p>
+    </div>
+  </div>
