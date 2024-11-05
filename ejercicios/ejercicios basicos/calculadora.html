@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+    
+    <p>Número 1 <input type="text" id="texto" 
+        ></p>
+
+    </div>
+    <div id="demo2">
+    
+        <p>Número 2 <input type="text" id="texto2"
+        ></p>
+    
+    </div>
+    <div id="botones">
+        <input type="button" value="SUMA" onclick="sumar()">
+        <input type="button" value="RESTA" onclick="restar()">
+    </div>
+    <div id="resultado">
+
+    </div>
+</body>
+<script type="text/javascript"> 
+function sumar(){
+document.getElementById("resultado").innerHTML="La suma es " + (Number(document.getElementById("texto").value )+Number(document.getElementById("texto2").value ));
+}
+function restar(){
+
+    document.getElementById("resultado").innerHTML="La resta es " + (Number(document.getElementById("texto").value )-Number(document.getElementById("texto2").value ));
+}
+
+</script>
+</html>

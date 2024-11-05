@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CONTROL FORMULARIOS</title>
+        <link rel="stylesheet" href="main.css">
+   
+<script>
+function cambiar(e){
+        imagen.style.filter="grayscale(100%)"
+}
+function volver(e){
+        imagen.style.filter=""
+}
+</script>
+</head>
+<body>
+<a href="https://www.yobingo.es/" onclick="return window.confirm('Quieres salir?')">Juguemos al Bingo</a>
+<img src="garfield.jpg" width="300" height="300" onmouseover="cambiar(this)" onmouseleave="volver(this)" id="imagen"> <input type="button" value="PULSAME">
+</body>
+</html>

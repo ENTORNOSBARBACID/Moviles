@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1. Que significan las siguientes expresiones regulares y para que pueden servir
+        a. /^\s+$/ --> Un espacio o más en blanco
+
+        b. /^\d{8}[A-Z]$/ --> 8 numeros obligatorios mas una letra en mayusculas 
+
+        c. /^\d{10}[A-Z]{2}$/ --> 10 numeros obligatorios mas dos letras en mayusculas 
+
+        d. /^\d{9}$/ --> 9 numeros obligatorios
+
+        e. /^\d{3}-\d{3}-\d{3}$/ --> 3 numeros obligaroios mas un guion de separacion
+
+        f. /^\d{3}\s\d{2}\s\d{2}\s\d{2}$/ --> 3 numeros obligaroios y luego 2 mas un espacio de separacion
+
+        g. /^\+\d{2,3}\s\d{9}$/  -->  Un + mas dos o tres numeros obligatorios mas un espacio en blanco y nueve numeros obligatorios
+
+2. Definir y comprobar la validez de expresiones regulares que sirvan para comprobar
+si una cadena de caracteres:
+
+        a. Es un número binario. --> /^[0-1]*$/
+
+        b. Es un teléfono móvil --> /^[67]\d{2}-\d{3}-\d{3}$/
+
+        c. Es un teléfono 901, 902 o 903 --> /^90[1-3]\d{6}$/
+
+        d. Es daw1, daw2, asir1, asir2, fin1 o fin2 en mayúsculas o minúsculas--> /^(daw|asir|fin)[12]$/
+
+        e. Es una cantidad de dinero que tiene dos decimales (, decimal) y acaba en $ o € --> /^\d*,\d{2}[$€]/
+
+        f. Es una página web que comienza con www., acaba con .com o .org o .es y --> /^www\..*(poker|porno|juego).*\.(com|es|org)$/
+        contiene en su nombre “poker”, “porno” o “juego”
+
+        g. Es una hora que contiene hh:mm:ss (por ej 12:44:21) -->/^([01]\d | 2[0-3])(:[0-5])\d){2}$/
+
+        h. Es una fecha dd/mm/aaaa -->/^ (0\d|[12]\d|3[01]) \/ (0\d|1[012]) \/ \d{4} $/
+
+        i. Contraseña de exactamente 6 dígitos  --> /^\d{6}$/
+
+        j. Contraseña de 6 caracteres con solo dígitos o letras minúsculas /^(\d|[a-z]){6}$/
+
+        k. Contraseña de entre 6 y 8 caracteres entre los que hay al menos una letra --> /^(?=.*[a-z])(?=.*\d)[0-9a-z]{6,8}$/
+        minúscula y un dígito
+
+3. OPCIONAL
+    Implementar las siguientes expresiones regulares:
+        a. Solo tienen ‘a’ o solo tienen ‘b’
+        b. Solo tengan parejas de ‘a’ y/o parejas de ‘b’
+        c. Contienen la cadena ‘aba’ o la cadena ‘bab’
+        d. Contienen la cadena ‘ba’ al menos dos veces seguidas
+        e. No tienen más de tres ‘a’ o tres ‘b’ seguidas
+        f. Alternan la ‘a’ y la ‘b’ sin repetirse
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="StyleSheet" href="validar.css" type="text/css">
+ <title>Formulario Paga Especial</title>
+ <script>
+
+
+    function validarFormulario(){
+        let anombre=nombre.value;
+        let apellido=apellidos.value;
+        let nacimiento=anoNacimiento.value;
+        let entrada=anoEntrada.value;
+        let salario=salarioBase.value;
+        let nsucursal=sucursal.value;
+        //let nirpf=document.querySelector('input[name="irpf"]:checked').value;
+        let elementos=document.getElementsByName("irpf");
+        let nirpf=null;
+		for (let i=0;i<elementos.length;i++)
+			if (elementos[i].checked){
+				nirpf=parseFloat(elementos[i].value);
+				break;	
+				}
+
+        //validar año de nacimiento
+        if(nacimiento=="")
+            alert("El año de nacimiento esta vacio");
+            else if(!Number(nacimiento))
+                alert("El año de nacimiento no es un número");
+                else if((fecha=new Date(nacimiento)) > (fecha2=new Date()))
+                    alert("El año de nacimiento es posterior a la fecha actual");
+                    else if(((fecha=new Date().getFullYear()) - parseInt(nacimiento)) < 18 ||
+                     ((fecha=new Date().getFullYear()) - parseInt(nacimiento)) > 65)
+                        alert("La edad debe estar entre 18 y 65 años");
+        //validar año entrada
+        else if(entrada=="precio=4;")
+        alert("El año de entrada esta vacio");
+        else if(!Number(entrada))
+            alert("El año de entrada no es un número entero");
+                else if(parseInt(entrada) < 2000 ||
+                    parseInt(entrada) > (fecha2=new Date().getFullYear()))
+                        alert("El año de entrada tiene que ser valido");
+                        else if((parseInt(entrada) - parseInt(nacimiento)) < 18)
+                            alert("Tendrias que haber tenido los 18 años");
+        //validar salario
+            else if(salario=="")
+            alert("El salario está vacio");
+            else if(!Number(salario))
+                alert("El salario tiene que ser un número");
+                else if(parseInt(salario)<1100)
+                    alert("El salario no puede ser menor de 1100 euros");
+        //validar sucursal
+        else if(nsucursal==0)
+            alert("la sucursal no se ha seleccionado");
+        //validar irpf
+        else if(nirpf == null)
+            alert("No ha seleccionado el irpf");
+        else
+            resultado.style="";
+
+
+        let trienio=Math.floor((2024-entrada)/3);
+        document.getElementById("trienio").value=trienio;
+
+
+        let extra=parseFloat((salario*0.1)*trienio);
+        document.getElementById("extra").value=extra;
+
+
+        extra+=parseInt(nsucursal);
+        document.getElementById("extraconsucursal").value=extra;
+
+
+        extra-=extra*(nirpf/100);
+        document.getElementById("extraconirpf").value=extra;
+    }
+
+
+ </script>
+</head>
+<body>
+    <h1>Formulario de Paga Especial</h1>
+    <form id="formulario">
+        <label >Nombre:</label>
+        <input type="text" id="nombre"  >
+        <label >Apellidos:</label>
+        <input type="text" id="apellidos" ><br><br>
+
+
+        <label >Año de Nacimiento:</label>
+        <input type="text" id="anoNacimiento" size="6">
+
+
+        <label >Año de Entrada a la Empresa:</label>
+        <input type="text" id="anoEntrada" size="6" ><br><br>
+
+
+        <label >Salario Base:</label>
+        <input type="text" id="salarioBase" ><br><br>
+
+
+        <label >Sucursal:</label>
+        <select id="sucursal">
+            <option value="0">Seleccione una opción</option>
+            <option value="100">Madrid</option>
+            <option value="60">Alcobendas</option>
+            <option value="50">San Sebastián de los Reyes</option>
+        </select><br><br>
+
+
+        <label>Tipo de IRPF:</label><br>
+        <input type="radio"  name="irpf" value="19"> 19%
+        <input type="radio"  name="irpf" value="24"> 24%
+        <input type="radio"  name="irpf" value="30"> 30%<br><br>
+
+
+        <label >¿Desea recibir correo electrónico?</label>
+        <input type="checkbox" id="correo"><br><br>
+
+
+        <button type="button" onclick="validarFormulario()">Validar</button>
+       
+        <div id="resultado" style="display:none">
+
+
+            <p><label>Trienio: </label> <input type="text" id="trienio" value="" readonly="readonly"></p>
+            <p><label>Paga extra: </label> <input type="text" id="extra" value="" readonly="readonly"></p>
+            <p><label>Paga extra mas sucursal: </label> <input type="text" id="extraconsucursal" value="" readonly="readonly"></p>
+            <p><label>Paga extra menos irpf: </label> <input type="text" id="extraconirpf" value="" readonly="readonly"></p>
+
+
+        </div>
+
+
+    </form>
+       
+</body>
+</html>

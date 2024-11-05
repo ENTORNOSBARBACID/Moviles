@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function fecha(){
+            let fecha=document.getElementById("f1").value;
+            let fechaActual=new Date();
+            let fechaNacimiento=new Date(fecha);
+
+            var dia=fechaNacimiento.getDay();
+            let dias=["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"]
+            let diaSemanaNombe=dias[dia];
+
+            var añoActual=fechaActual.getFullYear();
+            var mesActual=fechaActual.getMonth();
+            var diaActual=fechaActual.getDay();
+
+
+            var añoNacimiento=fechaNacimiento.getFullYear();
+            var mesNacimiento=fechaNacimiento.getMonth();
+            var diaNacimiento=fechaNacimiento.getDay();
+
+            var años=añoActual-añoNacimiento;
+
+            if(mesActual<mesNacimiento || (mesActual==mesNacimiento && diaActual<diaNacimiento))
+                años--;
+            alert("Tienes "+años+" años y naciste un "+diaSemanaNombe);
+
+        }
+
+    </script>
+</head>
+<body>
+    <input type="date" id="f1"><input type="button" value="PULSA" id="b1" onclick="fecha()">
+</body>
+</html>
