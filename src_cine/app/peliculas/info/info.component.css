@@ -1,65 +1,37 @@
-.info {
-    max-width: 300px;
-    margin: 20px;
-    padding: 15px;
-    border-radius: 12px;
-    background: white;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.info:hover {
-    transform: translateY(-5px);
-}
-
-/* Estilos para las imágenes */
-.imagenes {
+.info{
     width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
+    height: auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
-/* Estilos para los párrafos */
-.info p {
-    margin: 8px 0;
-    padding: 5px 0;
-    font-family: 'Arial', sans-serif;
-    color: #333;
+#foto{
+    width: 50%;
+    text-align: center;
 }
-
-/* Título */
-.info p:first-of-type {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #1a1a1a;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 10px;
+.imagenes{
+    padding: 20px;
+    width: 50%;
+    border: 2px solid red;
 }
-
-/* Información adicional */
-.info p:not(:first-of-type) {
-    font-size: 0.95em;
-    color: #666;
+.imagenes:hover{
+    border:none;
+    padding:22px
 }
-
-/* Estilos para el contenedor responsive */
-@media (min-width: 768px) {
-    .info {
-        display: inline-block;
-        vertical-align: top;
-    }
+#contenido h1{
+    padding-bottom: 40px;
 }
-
-/* Estilos para pantallas pequeñas */
-@media (max-width: 767px) {
-    .info {
-        max-width: 100%;
-        margin: 20px 10px;
-    }
-    
-    .imagenes {
-        height: 300px;
-    }
+#contenido h1:hover{
+    color:red;
+    text-decoration: underline;
+}
+#contenido p:hover{
+    color:red
+}
+#contenido{
+    width: 50%;
+    text-align: center;
+    border-radius: solid 2px red;   
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Iserie } from '../Iserie';
+import { ContenidoService } from '../../servicios/contenido.service';
 
 
 @Component({
@@ -11,80 +12,7 @@ import { Iserie } from '../Iserie';
 })
 export class SerieComponent {
 cartel:Iserie[]=[]
-constructor(){
-this.cartel=[
-{
-    
-      image:"https://static.posters.cz/image/750/posters/rick-morty-portal-i40514.jpg",
-      titulo:"Pedro y Samuel",
-      temporadas:7,
-      sinopsis:"asdasdas",
-      plataforma:"HBO max",
-      id:"1",
-},
-{
-    
-  image:"https://m.media-amazon.com/images/I/81eY+Q2pOGL.jpg",
-  titulo:"Cosas raras",
-  temporadas:4,
-  sinopsis:"asdasdas",
-  plataforma:"Netflix",
-  id:"2"
-},
-{
-    
-  image:"https://m.media-amazon.com/images/I/81xETRmcFwL._AC_UF894,1000_QL80_.jpg",
-  titulo:"Suerte",
-  temporadas:1,
-  sinopsis:"asdasdas",
-  plataforma:"Disney +",
-  id:"3"
-},
-{
-    
-  image:"https://www.formulatv.com/images/series/posters/000/33/dest_1.jpg",
-  titulo:"La familia de Pinilla",
-  temporadas:32,
-  sinopsis:"asdasdas",
-  plataforma:"Disney +",
-  id:"4"
-},
-{
-    
-  image:"https://es.web.img2.acsta.net/pictures/20/03/19/11/40/1818277.jpg",
-  titulo:"Enzo",
-  temporadas:7,
-  sinopsis:"asdasdas",
-  plataforma:"Netflix",
-  id:"5"
-},
-{
-    
-  image:"https://pics.filmaffinity.com/african_folktales_reimagined-850256368-mmed.jpg",
-  titulo:"Juegos del hambre",
-  temporadas:2,
-  sinopsis:"asdasdas",
-  plataforma:"Netflix",
-  id:"6"
-},
-{
-    
-  image:"https://m.media-amazon.com/images/M/MV5BMWU2ZWE4NTktMTM4Ni00OTVkLTk3ZDAtMTc2YjY1NmZmYTlkXkEyXkFqcGc@._V1_.jpg",
-  titulo:"Carcel contra mujeriegos",
-  temporadas:3,
-  sinopsis:"asdasdas",
-  plataforma:"Netflix",
-  id:"7"
-},
-{
-    
-  image:"https://es.web.img2.acsta.net/pictures/20/12/18/12/22/3538912.jpg",
-  titulo:"Un sueño humedo de Pinilla",
-  temporadas:13,
-  sinopsis:"asdasdas",
-  plataforma:"MiTele+",
-  id:"8"
-},
-  ]
+constructor(private data:ContenidoService){
+  this.cartel=this.data.getSeries()
 }
 }
