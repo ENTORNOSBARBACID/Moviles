@@ -1,0 +1,30 @@
+#menu {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  position: static;
+}
+#menu > img {
+  width: 20%;
+  height: 12vh;
+}
+#links {
+  width: 33%;
+  display: flex;
+  justify-content: space-around;
+}
+#links > a {
+  text-decoration: none;
+  color: red;
+  padding-top: 30px;
+}
+#menu p {
+  padding-top: 30px;
+  color: red;
+  text-decoration: underline;
+}
+#links a:hover {
+  text-decoration: underline;
+  transform: scale(1.2);
+}

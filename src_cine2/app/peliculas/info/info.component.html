@@ -1,0 +1,27 @@
+<div *ngFor="let s of serie" class="info">
+  <div *ngIf="s.id == id" class="info">
+    <div id="foto">
+      <img src="{{ s.image }}" class="imagenes" />
+    </div>
+    <div id="contenido">
+      <h1>{{ s.titulo }}</h1>
+      <p><u>Temporadas:</u> {{ s.temporadas }}</p>
+      <p><u>Plataformas:</u> {{ s.plataforma }}</p>
+      <p><u>Sinopsis:</u> {{ s.sinopsis }}</p>
+    </div>
+  </div>
+</div>
+
+<div *ngFor="let s of cine" class="info">
+  <div *ngIf="s.id == id" class="info">
+    <div id="foto">
+      <img src="{{ s.image }}" class="imagenes" />
+    </div>
+    <div id="contenido">
+      <h1>{{ s.titulo }}</h1>
+      <p><u>Año:</u> {{ s.ano }}</p>
+      <p><u>Sinopsis:</u> {{ s.sinopsis }}</p>
+      <p><u>Puntuación:</u> {{ s.puntuacion }}</p>
+    </div>
+  </div>
+</div>

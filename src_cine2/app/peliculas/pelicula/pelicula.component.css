@@ -1,0 +1,16 @@
+
+*{
+    display: inline;
+}
+.imagenes{
+    height: 30%;
+    width: 60%;
+    position: relative;
+}
+.cine{
+    text-align: center;
+    width: 25%;
+    position:relative;
+    display: inline-block;
+    margin-top:2%;
+}
