@@ -8,9 +8,6 @@ import { Observable } from 'rxjs/internal/Observable';
   providedIn: 'root',
 })
 export class ContenidoService {
-  listaCine: Icine[] = [];
-  listaSerie: Iserie[] = [];
-
   constructor(private http: HttpClient) {}
 
   public getPeliculas(): Observable<Icine[]> {
