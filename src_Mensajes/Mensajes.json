@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "nombre": "Pinilla",
+        "asunto": "Hola que tal tengo diarrea.",
+        "texto": "Me he levantado esta mañana con dolor de tripa, he ido a cagar y me ha sangrado el ojete."
+    },
+    {
+        "id": 2,
+        "nombre": "Sergio",
+        "asunto": "He ido a Amsterdam y he perdido 1000$.",
+        "texto": "Este finde he idoa amasterdam y un dia de movida entre porros y alcohol perdi la cartera y a mi suegra en un bar de alli."
+    },
+    {
+        "id": 3,
+        "nombre": "Alex",
+        "asunto": "Quiero dejar de fumar.",
+        "texto": "Hace tiempo decidi mejorar mi via y dejar de fumar vaper, aguante 3 dias y ahora soy ludopata y nuna deje de fumar."
+    },
+    {
+        "id": 4,
+        "nombre": "Pedro",
+        "asunto": "Tengo un problema.",
+        "texto": "Cada ve que me levanto de la cama, me pego contra el techo, cada vez que paso por una puerta, me pego con el marco, todo es bajo o yo soy demasiado alto, dime que hacer."
+    },
+    {
+        "id": 5,
+        "nombre": "Enzo",
+        "asunto": "Los dibujos animados me la ponen tritiesa.",
+        "texto": "No puedo ver algun anime o dibujo animado se me pone muy dura y me tengo que saciar con algo."
+    }
+]
