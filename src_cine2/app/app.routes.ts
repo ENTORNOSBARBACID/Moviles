@@ -3,6 +3,8 @@ import { SerieComponent } from './peliculas/serie/serie.component';
 import { PeliculaComponent } from './peliculas/pelicula/pelicula.component';
 import { InicioComponent } from './peliculas/inicio/inicio.component';
 import { InfoComponent } from './peliculas/info/info.component';
+import { RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
   { path: 'serie', component: SerieComponent },

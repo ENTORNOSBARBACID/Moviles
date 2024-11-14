@@ -4,8 +4,6 @@ import { Iserie } from '../Iserie';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { ContenidoService } from '../../servicios/contenido.service';
 
-import { HttpClient } from '@angular/common/http';
-
 @Component({
   selector: 'app-info',
   templateUrl: './info.component.html',
@@ -19,8 +17,16 @@ export class InfoComponent implements OnInit {
   constructor(private router: ActivatedRoute, private data: ContenidoService) {
     // Un solo constructor que recibe 'ActivatedRoute'
 
-    this.cine = this.data.getPeliculas();
-    this.serie = this.data.getSeries();
+    this.data.getPeliculas().subscribe((listaPelicula) => {
+      listaPelicula.forEach((s) => {
+        this.cine.push(s);
+      });
+    });
+    this.data.getSeries().subscribe((listaSeries) => {
+      listaSeries.forEach((s) => {
+        this.serie.push(s);
+      });
+    });
   }
 
   ngOnInit() {

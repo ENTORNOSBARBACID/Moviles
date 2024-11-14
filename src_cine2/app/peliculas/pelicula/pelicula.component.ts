@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Icine } from '../Icine';
 import { ContenidoService } from '../../servicios/contenido.service';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-pelicula',
@@ -13,6 +12,10 @@ export class PeliculaComponent {
   lista: Icine[] = [];
 
   constructor(private data: ContenidoService) {
-    this.lista = this.data.getPeliculas();
+    this.data.getPeliculas().subscribe((listaPelicula) => {
+      listaPelicula.forEach((s) => {
+        this.lista.push(s);
+      });
+    });
   }
 }

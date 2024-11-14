@@ -4,11 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-menu',
   standalone: false,
   templateUrl: './menu.component.html',
-  styleUrl: './menu.component.css'
+  styleUrl: './menu.component.css',
 })
-export class MenuComponent {
-
-  changePage(){
-
-  }
-}
+export class MenuComponent {}

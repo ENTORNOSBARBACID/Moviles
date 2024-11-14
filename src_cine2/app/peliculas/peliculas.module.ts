@@ -6,7 +6,7 @@ import { SerieComponent } from './serie/serie.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { RouterLink } from '@angular/router';
 import { InfoComponent } from './info/info.component';
-import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { HttpClient } from '@angular/common/http';
     InicioComponent,
     InfoComponent,
   ],
-  imports: [CommonModule, RouterLink, HttpClient],
+  imports: [CommonModule, RouterLink, HttpClientModule],
   exports: [
     PeliculaComponent,
     MenuComponent,
