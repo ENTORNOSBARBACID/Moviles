@@ -2,21 +2,23 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 20%;
-  margin: 10px 0 20px 00px;
+  width: 500px;
+  margin: 10px 0 100px 0px;
   height: auto;
   border: 2px solid black;
-  padding: 10px;
+  padding: 30px;
+  position: static;
 }
 #detalles {
   color: blue;
+  width: auto;
 }
-.texto {
-  display: none;
+#texto {
+  display:none;
 }
-#detalles:hover {
+#detalles:hover{
   text-decoration: underline;
-  .texto {
-    display: block;
-  }
+}
+#detalles:hover + #texto {
+  display:block;
 }
