@@ -1,0 +1,129 @@
+<div id="cuerpo">
+  <div id="imagen">
+    <img
+      src="https://i0.wp.com/newspack-elsol.s3.amazonaws.com/wp-content/uploads/2022/01/1642271183657WhatsApp-Image-2022-01-15-at-12.33.45-_1_.jpg?ssl=1"
+    />
+  </div>
+
+  <h1>AQUI SI CUIDAMOS A LOS QUE NOS CUIDAN</h1>
+  <div id="adoptar">
+    <div class="form-container">
+      <h2>Registro de Mascota</h2>
+      <form action="/submit" method="post">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Ingresa el nombre"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="tipo">Tipo</label>
+          <select id="tipo" name="tipo" required>
+            <option value="">Selecciona</option>
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="raza">Raza</label>
+          <input
+            type="text"
+            id="raza"
+            name="raza"
+            placeholder="Ingresa la raza"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="edad">Edad</label>
+          <input
+            type="number"
+            id="edad"
+            name="edad"
+            placeholder="Ingresa la edad en años"
+            min="0"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="sexo">Sexo</label>
+          <select id="sexo" name="sexo" required>
+            <option value="">Selecciona</option>
+            <option value="macho">Macho</option>
+            <option value="hembra">Hembra</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="tamaño">Tamaño</label>
+          <select id="tamaño" name="tamaño" required>
+            <option value="">Selecciona</option>
+            <option value="pequeño">Pequeño</option>
+            <option value="mediano">Mediano</option>
+            <option value="grande">Grande</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="observaciones">Observaciones</label>
+          <textarea
+            id="observaciones"
+            name="observaciones"
+            rows="4"
+            placeholder="Ingresa cualquier observación"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn">Registrar</button>
+      </form>
+    </div>
+
+    <div class="adoption-form-wrapper">
+      <h2 class="adoption-form-title">Formulario de Adopción</h2>
+      <form action="/adoptar" method="post">
+        <div class="adoption-form-group">
+          <label for="nombre">Tu Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Ingresa tu nombre"
+            required
+          />
+        </div>
+        <div class="adoption-form-group">
+          <label for="contacto">Número de Contacto</label>
+          <input
+            type="tel"
+            id="contacto"
+            name="contacto"
+            placeholder="Ingresa tu número"
+            required
+          />
+        </div>
+        <div class="adoption-form-group">
+          <label for="animal">Tipo de Mascota</label>
+          <select id="animal" name="animal" required>
+            <option value="">Selecciona</option>
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+          </select>
+        </div>
+        <div class="adoption-form-group">
+          <label for="motivo">Motivo de Adopción</label>
+          <input
+            type="text"
+            id="motivo"
+            name="motivo"
+            placeholder="Breve motivo"
+            required
+          />
+        </div>
+        <button type="submit" class="adoption-form-btn">
+          Enviar Solicitud
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

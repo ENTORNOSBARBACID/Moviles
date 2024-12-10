@@ -1,0 +1,42 @@
+#cabeza {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  padding: 10px;
+  flex-direction: row;
+  border: 2px rgb(8, 170, 203) solid;
+  border-radius: 15px 15px 15px 15px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgb(33, 101, 209);
+}
+#cabeza > h1 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+#links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+#cabeza > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px 10px 10px 10px;
+}
+#links > a {
+  display: flex;
+  text-decoration: none;
+  background-color: white;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border: 2px rgb(78, 195, 219) solid;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 2px 2px 2px;
+}
+#links > a:hover {
+  box-shadow: 5px 5px 5px;
+}

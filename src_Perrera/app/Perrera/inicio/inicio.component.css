@@ -1,0 +1,128 @@
+#cuerpo {
+  width: 100%;
+  height: auto;
+}
+#imagen {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+#imagen > img {
+  width: 1200px;
+  height: 600px;
+}
+#cuerpo > h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+.form-container {
+  background: #ffffff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+.form-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333333;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555555;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.form-group textarea {
+  resize: none;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.btn {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.adoption-form-wrapper {
+  background-color: #ffffff;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+}
+.adoption-form-title {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+}
+.adoption-form-group {
+  margin-bottom: 15px;
+}
+.adoption-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555555;
+}
+.adoption-form-group input,
+.adoption-form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.adoption-form-group input:focus,
+.adoption-form-group select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+.adoption-form-btn {
+  width: 100%;
+  background-color: #28a745;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.adoption-form-btn:hover {
+  background-color: #218838;
+}
+
+#adoptar {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 30px;
+}

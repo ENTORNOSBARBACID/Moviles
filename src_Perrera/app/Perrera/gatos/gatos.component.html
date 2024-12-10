@@ -1,0 +1,7 @@
+<div *ngFor="let item of lista">
+  <div *ngIf="item.animal == 'gato'" class="perro">
+    <p>{{ item.id }}</p>
+    <p>{{ item.raza }}</p>
+    <img src="{{ item.imagen }}" class="perro-image" />
+  </div>
+</div>

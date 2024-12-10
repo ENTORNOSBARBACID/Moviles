@@ -1,0 +1,37 @@
+/* Contenedor de las imágenes */
+div {
+  margin-bottom: 20px;
+  text-align: center; /* Centra el texto e imágenes */
+}
+
+/* Estilos para los párrafos */
+p {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Estilos específicos para las imágenes de los perros */
+.perro-image {
+  width: 100%; /* Hace que la imagen sea completamente responsiva */
+  max-width: 600px; /* Limita el ancho máximo de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra a la imagen */
+  transition: transform 0.3s ease; /* Añade transición suave para el hover */
+}
+
+.perro-image:hover {
+  transform: scale(1.05); /* Hace un ligero zoom al pasar el ratón por encima */
+}
+
+/* Centra el contenido en la pantalla */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f4f4f9; /* Fondo suave */
+  font-family: "Arial", sans-serif;
+}
